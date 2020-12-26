@@ -1,0 +1,12 @@
+<h1>Add New Status</h1>
+
+<% if (locals.errorMessage != null) { %>
+  <%= errorMessage %>
+  
+<% } %>
+
+<form action="/status" method="POST">
+  <label>Content</label>
+  <input type="text" name="content" value="<%= status.content %>"/>
+   <button type="submit">Add</button>
+</form>
